@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+p{
+    color: rgb(85, 85, 85);
+}
+
+/*transition*/
+a,
+ .btn {
+    transition: all 300ms ease;
+}
+
+/*desktop nav*/
+
+nav, 
+.nav-links{
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: gray;
+    text-decoration: rgb(181, 181, 181);
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+.logo{
+    font-size: 1rem;
+}
+
+.logo:hover{
+    cursor:grab;
+}
+
+/*hamburger menu*/
+#hamburger-nav {
+    display: none;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color:black ;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 300ms ease;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+transform: rotate(45deg) translate(10px, 5px) ;
+}
+
+.hamburger-icon.open span:nth-child(2) {
+opacity: 0 ;
+}
+
+.hamburger-icon.open span:last-child {
+transform: rotate(-45deg) translate(10px, -5px) ;
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+/*section*/
+#profile {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.section__pic__container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section__text {
+    text-align: left;
+    align-items: center;
+    text-align: center;
+    padding-top: 0;
+}
+
+.section__text p {
+    font-weight: 600;
+}
+
+.section__text__p1 {
+  text-align: center;  
+}
+.section__text__p1 {
+  font-size: 1.75rem;  
+  margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+/*button*/
+
+button{
+    text-decoration: none;
+    display: inline-block;
+    background-color: pink; 
+    border: 2px solid black; 
+    padding: 10px 20px;
+    border-radius: 25px; 
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 4px;
+}
+
+button:hover{
+    border: rgb(204, 101, 139) 0.1rem solid;
+    cursor: grab;
+    background-color: rgb(238, 235, 161);
+}
+
+/*about*/
+
+.gambar2 {
+    display: flex;
+    height: 350px;
+    width: 350px;
+    margin: auto 0;
+}
+
+.section_text_p1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.arrow1{
+    position: absolute;
+    right: 1rem;
+    bottom: 2.5rem;
+}
+
+.arrow2{
+    position: absolute;
+    right: 1rem;
+    bottom: -45rem;
+}
+
+.intro {
+   padding: 1,5rem;
+   flex: 1;
+   background-color: whitesmoke;
+   border-radius: 0.5rem;
+   border: rgb(0, 0, 0) 0.1rem solid;
+   text-align: center;
+   margin-bottom: 50px;
+}
+
+.education {
+    padding: 1,5rem;
+   flex: 1;
+   background-color: whitesmoke;
+   border-radius: 0.5rem;
+   border: rgb(0, 0, 0) 0.1rem solid;
+   text-align: center;
+}
+
+/*experience*/
+
+.arrow3 {
+   position: absolute;
+   right: 1rem;
+}
+
+.experience-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.experience-detail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    padding-left: 5px;
+    gap: 10px;
+}
+
+article{
+   display: flex;
+   width: 10rem;
+   justify-content: space-around;
+   gap: 0.5rem;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px
+}
+
+.details-containers {
+    width: 300px; 
+    text-align: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: gray;
+    background: rgb(250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.details-containerss {
+    width: 300px; 
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: gray;
+    background: rgb(250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+    position: absolute;
+    top: 108rem;
+    left: 16rem;
+}
+
+.project {
+    position: absolute;
+    right: 8rem;
+    top: 106rem;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: gray;
+    background: rgb(250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.gambarmockup {
+    display: flex;
+    height: 350px;
+    width: 350px;
+}
+
+
+
+
+/*contact */
+
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: gray;
+    background: rgb(250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-info-container p{
+    font-size: larger;
+}
+
+/*footer*/
+
+footer{
+    height: 26vh;
+    margin: 0 1rem;
+}
+
+footer p{
+    text-align: center;
+}

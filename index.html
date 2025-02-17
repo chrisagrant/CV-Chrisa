@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <script src="https://kit.fontawesome.com/1dd1ecbfe1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <nav id="desktop-nav">
+    <div class="logo">CGB</div>
+    <div>
+    <ul class="nav-links">
+        <li><a href="#about">about</a></li>
+        <li><a href="#experience">experience</a></li>
+        <li><a href="#softskill">soft skill</a></li>
+        <li><a href="#contact">contact</a></li>
+    </ul>
+    </div>
+   </nav>
+   <nav id="hamburger-nav">
+    <div class="logo">CGB</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+        <li><a href="#about"  onclick="toggleMenu">about</a></li>
+        <li><a href="#experience"  onclick="toggleMenu">experience</a></li>
+        <li><a href="#softskill"  onclick="toggleMenu">soft skill</a></li>
+        <li><a href="contact"  onclick="toggleMenu">contact</a></li>
+    </div>
+    </div>
+   </nav>
+   <section id="profile">
+    <div class="section__pic__container">
+        <img src="foto profil.png" alt="ini poto aku">
+    </div>
+    <div class="section__text">
+        <p class="section_-text__p1">Hello, i'm</p>
+        <h1 class="title">Chrisa Grant Banuarea</h1>
+        <p class="section__text__p2">Mahasiswa USU</p>
+            <button class= "btn-color" onclick="window.open('CV-Chrisa.pdf')"> <i class="fa-solid fa-download"></i> download cv</button>
+    </div>
+   </section>
+   <section id="about">
+    <p class="section_text_p1">Get to know more</p>
+    <p class="title">ABOUT ME</p>
+    <div class="section-container">
+    <div class="gambar2">
+        <img src="poto2.jpeg" alt="poto aku" class="about-pic">
+    </div>
+    <div class="about-detail-container">
+        <div class="intro">
+            <i class="fa-solid fa-user"></i>
+            <h3>Introduction</h3>
+            <p>
+                Perkenalkan nama saya Chrisa Grant Banuarea. Saya adalah seorang mahasiswi Universitas Sumatera Utara semester ke-dua.
+                Hobi saya adalah mendengarkan musik, menonton drama, bernyanyi, membaca.
+                lagu kesukaan saya adalah woman's worth by Alicia Keys.
+                Saya memilih Jurusan Teknologi Informasi karna peluang pekerjaan yang besar dari jurusan ini.
+            </p>
+           </div> 
+         <div class="education">
+            <i class="fa-solid fa-school"></i>
+              <h3>Education</h3>
+              <p>SMA SANTO THOMAS 2 MEDAN</p>
+              <p>SMP SANTO THOMAS 1 MEDAN</p>
+              <p>SD SANTO THOMAS 5 MEDAN</p>
+              <P>TK SANTA CLARA MEDAN</P>
+         </div>
+        <button class="arrow1" onclick="location.href='./#about'"><i class="fa-solid fa-arrow-down-wide-short fa-xl"></i></button>
+        <button class="arrow2" onclick="location.href='./#experience'"><i class="fa-solid fa-arrow-down-wide-short fa-xl"></i></button>
+    </div>
+    
+</div>
+   </section>
+   <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">EXPERIENCE</h1>
+    <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-containers">
+                <h2 class="experience-sub-title">Frontend Development</h2>
+
+                <div class="article-container">
+                    <article>
+                        <i class="fa-solid fa-medal"></i>
+                        <div>
+                            <h3>HTML</h3>
+                            <P>basic</P>
+                        </div>
+                    </article>
+
+                    <article>
+                        <i class="fa-solid fa-medal"></i>
+                        <div>
+                            <h3>CSS</h3>
+                            <P>basic</P>
+                        </div>
+                    </article>
+                    <article>
+                        <i class="fa-solid fa-medal"></i>
+                        <div>
+                            <h3>Javascript</h3>
+                            <P>basic</P>
+                        </div>
+                    </article>
+
+
+            <div class="details-containers">
+                <h2 class="experience-sub-title">Backend Development</h2>
+                <div class="article-container">
+                    <article>
+                        <i class="fa-solid fa-medal"></i>
+                        <div>
+                            <h3>git</h3>
+                            <P>beginner</P>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+            <div class="details-containerss">
+                <h2 class="experience-sub-title">Other Programming Language</h2>
+                <div class="article-container">
+                    <article>
+                        <i class="fa-solid fa-medal"></i>
+                        <div>
+                            <h3>c</h3>
+                            <P>beginner</P>
+                        </div>
+                    </article>
+                    <article>
+                        <i class="fa-solid fa-medal"></i>
+                        <div>
+                            <h3>cpp</h3>
+                            <P>beginner</P>
+                        </div>
+                    </article>
+                </div>
+            </div>
+    </div>
+
+    <div class="project">
+        <h1>project yang saya kerjakan sebelumnya</h1>
+        <p>website curhat kuy</p>
+        <img src="gambar mockup.png" alt="gambarmockup" class="gambarmockup">
+    </div>
+</div>
+</div>
+    <button class="arrow3" onclick="location.href='./#softskill'"><i class="fa-solid fa-arrow-down-wide-short fa-xl"></i></button>
+   </section>
+    
+   <section id="softskill">
+    <p class="section__text__p1">ABOUT</p>
+    <h1 class="title">My Soft Skill</h1>
+    <div class="intro">
+        <h2><i class="fa-solid fa-heart"></i>  saya adalah orang yang berjiwa besar</h2>
+       </div> 
+    <div class="intro">
+        <h2><i class="fa-solid fa-user-group"></i>  saya mampu berkomunikasi dengan baik</h2>
+       </div> 
+    <div class="intro">
+        <h2><i class="fa-solid fa-handshake"></i> saya memiliki jiwa kepimimpinan</h>
+       </div> 
+    <div class="intro">
+        <h2><i class="fa-solid fa-business-time"></i> saya handal dalam manajemen waktu</h2>
+       </div> 
+    <div class="intro">
+        <h2><i class="fa-solid fa-brain"></i>  saya berpikir kritis</h2>
+       </div> 
+    <div class="intro">
+        <h2><i class="fa-solid fa-scale-unbalanced-flip"></i> saya dapat diandalkan dalam mengambil keputusan</h2>
+    </div>
+    <button class="arrow3" onclick="location.href='./#contact'"><i class="fa-solid fa-arrow-down-wide-short fa-xl"></i></button>
+   </section>
+
+   <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact me</h1>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <button><i class="fa-solid fa-envelope fa-2xl"></i></button>
+            <p><a href="chrisagrant10@gmail.com">chrisagrant10@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+            <button><i class="fa-brands fa-instagram fa-2xl"></i></button>
+            <p>@chrisa.grant</p>
+        </div>
+        <div class="contact-info-container">
+            <button><i class="fa-brands fa-linkedin fa-2xl"></i></button>
+            <p>chrisa grant banuarea</p>
+        </div>
+</div>
+   </section>
+
+   <footer>
+    <nav>
+        <div class="nav-links-container"> 
+            <ul class="nav-links">
+                <li><a href="#about">about</a></li>
+                <li><a href="#experience">experience</a></li>
+                <li><a href="#softskill">soft skill</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <p>Copyright &#169; 2025 CGB. All right reserved</p>
+   </footer>
+   <script src="script.js"></script>
+</body>
+</html>
